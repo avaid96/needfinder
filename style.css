@@ -16,17 +16,18 @@
 #headerBar-name-holder {
     width: 550px;
     display: inline-block;
-    margin-top: 0;
+    vertical-align: middle;
 }
 
 #headerBar-name {
     font-size: 80px;
     margin-left: 5%;
-    margin-top: 0;
+    vertical-align: middle;
 }
 
 #headerBar-logo-holder {
     display: inline-block;
+    vertical-align: middle;
 }
 
 #headerBar-logo {
@@ -47,4 +48,21 @@
     font-size: 80px;
     text-align: center;
     margin-top: 5%;
+}
+
+#resourceList {
+  margin-left: 10%;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
