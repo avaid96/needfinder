@@ -1,6 +1,7 @@
 /* MAIN BLOCK CONTAINER */
 #mainBlock {
     border: solid;
+    background-color: rgb(190, 194, 197);
 }
 
 /* HEADER BAR */
@@ -11,6 +12,8 @@
     width: 80%;
     margin: 0 auto;
     margin-top: 5%;
+    background-color: white;
+    margin-bottom: 25%;
 }
 
 #headerBar-name-holder {
@@ -42,6 +45,8 @@
     width: 60%;
     margin: 0 auto;
     margin-top: 5%;
+    background-color: white;
+    margin-bottom: 25%;
 }
 
 #seekingHelpButton-text {
@@ -66,3 +71,81 @@
     -ms-user-select: none;
     user-select: none;
 }
+
+/* SPONSORS */
+
+#sponsorsList-name-holder {
+    width: 550px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+#sponsorsList-name {
+    font-size: 50px;
+    margin-left: 15%;
+    margin-top: 0;
+}
+
+/* RESOURCES BANNER */
+
+#resourcesBanner {
+    border: solid;
+}
+
+#resourcesBanner-name-holder {
+    width: 550px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+#resourcesBanner-name {
+    font-size: 80px;
+    margin-left: 15%;
+}
+
+/* RESOURCES SECTION */
+
+#resourcesSection {
+    border: solid;
+    height: 100%
+}
+
+.tile{ 
+    display:block;  
+    float:left;  
+    width:200px;  
+    height:200px;  
+    text-decoration:none;  
+    position:relative;  
+    font-size:50px;  
+    margin-left: 58px;
+    margin-right: 58px;
+    margin-top: 55px;
+    overflow:hidden;
+}
+
+/* COLORS */
+.TLightRed{background-color:#E51400}
+.TLightOrange{background-color:#FE8300}
+.TOrange{background-color:#FD5C04}
+.TRed{background-color:#BD0000}
+.TBrown{background-color:#7D6058}
+.TLightPurple{background-color:#E86EB2}
+.TDarkPurple{background-color:#8D0196}
+.TLightBlue{background-color:#5FCDCB}
+.TBlue{background-color:#1673D2}
+.TDarkBlue{background-color:#0849B1}
+.TFacebookBlue{background-color:#3B5D9C}
+.TTwitterBlue{background-color:#59D5E6}
+.TThumblrBlue{background-color:#2A4866}
+.TLinkedinBlue{background-color:#1477AC}
+.TDribbblePink{background-color:#F26097}
+.TTurquise{background-color:#5FCDCB}
+.TLightGrey{background-color:#E0E0E0}
+.TGrey{background-color:#BBB}
+.TDarkGrey{background-color:#666}
+.TLightGreen{background-color:#74E800}
+.TGreen{background-color:#00A300}
+.TDarkGreen{background-color:#008A00}
+.TBlack{background-color:#000}
+.TWhite{background-color:#fff} 
