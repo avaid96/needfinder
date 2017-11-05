@@ -1,3 +1,23 @@
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
 /* MAIN BLOCK CONTAINER */
 #mainBlock {
     border: solid;
@@ -7,7 +27,7 @@
 /* HEADER BAR */
 
 #headerBar {
-    height: 150px;
+    height: 200px;
     border-style: solid;
     width: 80%;
     margin: 0 auto;
@@ -24,7 +44,7 @@
 
 #headerBar-name {
     font-size: 80px;
-    margin-left: 5%;
+    margin-left: 15%;
     vertical-align: middle;
 }
 
@@ -118,10 +138,11 @@
     text-decoration:none;  
     position:relative;  
     font-size:50px;  
-    margin-left: 58px;
-    margin-right: 58px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 55px;
     overflow:hidden;
+    padding-left: 10px;
 }
 
 /* COLORS */
