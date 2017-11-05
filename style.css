@@ -1,0 +1,50 @@
+/* MAIN BLOCK CONTAINER */
+#mainBlock {
+    border: solid;
+}
+
+/* HEADER BAR */
+
+#headerBar {
+    height: 150px;
+    border-style: solid;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#headerBar-name-holder {
+    width: 550px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+#headerBar-name {
+    font-size: 80px;
+    margin-left: 5%;
+    margin-top: 0;
+}
+
+#headerBar-logo-holder {
+    display: inline-block;
+}
+
+#headerBar-logo {
+    height: 150px;
+}
+
+/* GIVE HELP */
+
+#seekingHelpButton {
+    height: 150px;
+    border-style: solid;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#seekingHelpButton-text {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 5%;
+}
