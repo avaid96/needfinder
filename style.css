@@ -33,7 +33,7 @@ a:active {
     margin: 0 auto;
     margin-top: 5%;
     background-color: white;
-    margin-bottom: 25%;
+    /* margin-bottom: 25%; */
 }
 
 #headerBar-name-holder {
@@ -67,6 +67,7 @@ a:active {
     margin-top: 5%;
     background-color: white;
     margin-bottom: 25%;
+    margin-top: 25%;
 }
 
 #seekingHelpButton-text {
@@ -75,10 +76,26 @@ a:active {
     margin-top: 5%;
 }
 
-#resourceList {
-  margin-left: 10%;
+/* Resources Pages */
+
+#resources {
+    height: 50%;
+    border-style: solid;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    background-color: white;
 }
 
+#resourceList {
+  margin-left: 10%;
+  font-size: 40px;
+}
+
+#categoryName {
+    margin-left: -6%;
+}
 .container {
     display: block;
     position: relative;
@@ -92,6 +109,21 @@ a:active {
     user-select: none;
 }
 
+#emergencyTips {
+    height: 200%;
+    border-style: solid;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    background-color: white;
+}
+
+#emergencyList{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 40px;
+}
 /* SPONSORS */
 
 #sponsorsList-name-holder {
