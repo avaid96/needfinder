@@ -127,7 +127,7 @@ a:active {
 /* SPONSORS */
 
 #sponsorsList-name-holder {
-    width: 550px;
+    width: 250px;
     display: inline-block;
     margin-top: 0;
 }
@@ -160,6 +160,15 @@ a:active {
 #resourcesSection {
     border: solid;
     height: 100%
+}
+
+.sponsorImage{ 
+    height:80px;
+    margin-left:30px;
+}
+
+.sponsorImageHolder{ 
+    display:inline;
 }
 
 .tile{ 
