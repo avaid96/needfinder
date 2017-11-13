@@ -28,6 +28,7 @@ a:active {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-blend-mode: overlay;
+    height: 100%;
 }
 
 #mainResourceBlock {
@@ -227,6 +228,34 @@ a:active {
     background-color: white;
     margin-left: 10%;
     font-size: 40px;
+}
+
+#tiles {
+    height: 300px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.needCard {
+    height: 200px;
+    border-style: solid;
+    width: 200px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 5%;
+    background-color: white;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#clothingCard {
+    background-color: aquamarine;
 }
 
 .tile{ 
