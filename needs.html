@@ -7,22 +7,77 @@
     </head>
     <body>
         <div id="mainBlock">
-          <div id="headerBar">
-            <div id="headerBar-name-holder"><h1 id="headerBar-name">NeedFinder</h1></div>
-            <div id="headerBar-logo-holder"><img id="headerBar-logo" src="logo.png"></div>
-          </div>
-          <div id="tiles">
-            <div class="needCard" id="clothingCard">
-                <h3>Clothing</h3>
+            <div id="headerBar">
+                <div id="headerBar-name-holder"><h1 id="headerBar-name">NeedFinder</h1></div>
+                <div id="headerBar-logo-holder"><img id="headerBar-logo" src="logo.png"></div>
             </div>
-            <div class="needCard">
-                <h3>Food</h3>
-            </div>
-            <div class="needCard">
-                <h3>Rescue</h3>
-            </div>
-          </div>
            
+            <div id="tiles">
+                <div class="needCard" id="clothingCard">
+                    <h3>Clothing</h3>
+                </div>
+                <div class="needCard" id="foodCard">
+                    <h3>Food</h3>
+                </div>
+                <div class="needCard" id="rescueCard">
+                    <h3>Rescue</h3>
+                </div>
+            </div>
+
+            <div class = "needTile inactive" id="clothing">
+                <ul style="list-style-type:none" id="resourceList">
+                    <div id="categoryName"><h3>Clothing</h3></div>
+                    <li> <input type="checkbox"> Jeans </li>
+                    <li> <input type="checkbox">  Tshirts </li>
+                    <li> <input type="checkbox">  Pullover </li>
+                    <li> <input type="checkbox">  Socks</li>
+                    <li> <input type="checkbox">  Jackets </li>
+                    <li> <input type="checkbox">  Shoes</li>
+                    <li> <input type="checkbox">  Coat</li>
+                    <li> <input type="checkbox">  Blah</li>
+                    <li> <input type="checkbox">  Blah blah</li>
+                    <li> <input type="checkbox">  blah blah blah </li>
+                </ul>
+            </div>
+
+            <div class = "needTile inactive" id="food">
+                <ul style="list-style-type:none" id="resourceList">
+                    <div id="categoryName"><h3>Food Bank</h3></div>
+                    <li> <input type="checkbox"> Ready-to-eat canned meats, fruits, vegetables and a can opener </li>
+                    <li> <input type="checkbox"> Protein or fruit bars </li>
+                    <li> <input type="checkbox"> Dry cereal or granola </li>
+                    <li> <input type="checkbox"> Peanut Butter</li>
+                    <li> <input type="checkbox"> Dried Fruit </li>
+                    <li> <input type="checkbox"> Canned Juices</li>
+                    <li> <input type="checkbox"> Non-perishable pasteurized milk </li>
+                    <li> <input type="checkbox"> High energy foods</li>
+                    <li> <input type="checkbox"> Food for infants</li>
+                    <li> <input type="checkbox"> Comfort/stress foods </li>
+                </ul>
+            </div>
+            
+            <div class = "needTile inactive" id="rescue">
+                <ul style="list-style-type:none" id="resourceList">
+                    <div id="categoryName"><h3>Rescue</h3></div>
+                    <li> <input type="checkbox"> Blah blah blah </li>
+                    <li> <input type="checkbox"> Blah 2 blah </li>
+                    <li> <input type="checkbox"> Pullover </li>
+                    <li> <input type="checkbox"> Socks</li>
+                    <li> <input type="checkbox"> Jackets </li>
+                    <li> <input type="checkbox"> Shoes</li>
+                    <li> <input type="checkbox"> Coat</li>
+                    <li> <input type="checkbox"> Blah</li>
+                    <li> <input type="checkbox"> Blah blah</li>
+                    <li> <input type="checkbox"> blah blah blah </li>
+                </ul>
+            </div>
+
+        <!-- Section denoting items you selected -->
+            <!-- <div id="headerBar-name-holder"><h1 id="headerBar-name">My Needs</h1></div>
+            <div>
+                <ol id="mylist">
+                </ol>
+            </div> -->
 
         </div>
     </body>
