@@ -6,17 +6,19 @@
     </head>
     <body>
         <div id="mainBlock" style="height:100%">
-          <div id="headerBar">
-            <div id="headerBar-name-holder"><h1 id="headerBar-name">NeedFinder</h1></div>
-            <div id="headerBar-logo-holder"><img id="headerBar-logo" src="logo.png"></div>
-          </div>
-          <div id="signinDiv">
-              <div><h3>Sign In</h3></div>
-              <form>
-                  <div>Email: <input class="signin" type="text" name="email"></div>
-                  <div>Password: <input class="signin" type="password" name="password"></div>
-                  <button type="button" class="signin" onclick="window.location.href='home.html'">Sign In</button>
-              </form>
+            <a href="home.html">
+                <div id="headerBar">
+                    <div id="headerBar-name-holder"><h1 id="headerBar-name">NeedFinder</h1></div>
+                    <div id="headerBar-logo-holder"><img id="headerBar-logo" src="logo.png"></div>
+                </div>
+            </a>
+            <div id="signinDiv">
+                <div><h3>Sign In</h3></div>
+                <form>
+                    <div>Email: <input class="signin" type="text" name="email"></div>
+                    <div>Password: <input class="signin" type="password" name="password"></div>
+                    <a href="needs.html"> <button type="button" class="signin" onclick="window.location.href='home.html'">Sign In</button> </a>
+                </form>
             </div>
 
             <div id="signupDiv">
@@ -27,13 +29,10 @@
                     <div>Contact #: <input class="signup" type="text" name="contact"></div>
                     <div>Location: <input class="signup" type="text" name="location"></div>
 
-                    <button type="button" class="signup" onclick="window.location.href='home.html'">Sign Up</button>
+                    <a href="needs.html"> <button type="button" class="signup" onclick="window.location.href='home.html'">Sign Up</button> </a>
                 </form>
                 <center><img src="Evanston.gif" alt="Map" height="300"></center>
-
             </div>
-
-
           </div>
     </body>
 </html>
