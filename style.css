@@ -212,18 +212,55 @@ a:active {
     display:inline;
 }
 
-.signin {
+.signXTable {
+    align-self: center;
+    padding-left: 60px;
+}
+
+.signXTableRow>td {
+    padding-bottom: 20px;
+}
+
+.signXLabel {
+    /* Label for sign in and sign up */
     font-size: 40px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    padding-right: 20px;
+    width: 160px;
+}
+
+.signXInput {
+    /* Input for sign in and sign up */
+    font-size: 40px;
+    width: 450px;
     outline: solid;
 }
 
-.signup {
+#signInHeaders {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.signXButton {
     font-size: 40px;
-    margin-bottom: 10px;
-    margin-left: 10px;
     outline: solid;
+    float: right;
+    margin-right: 70px;
+    margin-top: 10px;
+}
+
+#signUpLocation {
+    height: 200px;
+    width: 635px;
+    outline: solid;
+    margin: 0 auto;
+}
+
+#signUpLocationHolder {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #signinDiv {
@@ -239,7 +276,7 @@ a:active {
 }
 
 #signupDiv {
-    height: 50%;
+    height: 650px;
     border-style: solid;
     width: 80%;
     margin-left: 10%;

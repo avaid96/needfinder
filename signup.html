@@ -11,29 +11,34 @@
             <div id="headerBar-logo-holder"><img id="headerBar-logo" src="logo.png"></div>
           </div>
           <div id="signinDiv">
-              <div><h3>Sign In</h3></div>
+              <div id="signInHeaders"> Sign In </div>
               <form>
-                  <div>Email: <input class="signin" type="text" name="email"></div>
-                  <div>Password: <input class="signin" type="password" name="password"></div>
-                  <button type="button" class="signin" onclick="window.location.href='home.html'">Sign In</button>
+                  <table class="signXTable">
+                    <tbody>
+                        <tr class="signXTableRow"><td><div class="signXLabel">Email: </div></td><td><input class="signXInput" type="text" name="email"></td>
+                        <tr class="signXTableRow"><td><div class="signXLabel">Password: </div></td><td><input class="signXInput" type="password" name="password"></td>
+                    </tbody>
+                  </table>
+                  <button type="button" class="signXButton" onclick="window.location.href='home.html'">Sign In</button>
               </form>
             </div>
 
             <div id="signupDiv">
-                <div><h3>Create Your Own Profile</h3></div>
+                <div id="signInHeaders">Create An Account</div>
                 <form>
-                    <div>Name: <input class="signup" type="text" name="name"></div>
-                    <div>Address: <input class="signup" type="text" name="address"></div>
-                    <div>Contact #: <input class="signup" type="text" name="contact"></div>
-                    <div>Location: <input class="signup" type="text" name="location"></div>
+                    <table class="signXTable">
+                        <tbody>
+                            <tr class="signXTableRow"><td><div class="signXLabel">Name: </div></td><td><input class="signXInput" type="text" name="name"></td>
+                            <tr class="signXTableRow"><td><div class="signXLabel">Phone#: </div></td><td><input class="signXInput" type="text" name="phone"></td>
+                            <tr class="signXTableRow"><td><div class="signXLabel">Address: </div></td><td><input class="signXInput" type="text" name="address"></td>
+                            <!-- <tr class="signXTableRow"><td><div class="signXLabel">Password: </div></td><td><input class="signXInput" type="text" name="address"></td> -->
+                        <tbody>
+                    <table class="signXTable">
 
-                    <button type="button" class="signup" onclick="window.location.href='home.html'">Sign Up</button>
+                    <div id="signUpLocationHolder"><img id="signUpLocation" src="location.png" alt="Map"></div>
+                    <button type="button" class="signXButton" onclick="window.location.href='home.html'">Sign Up</button>
                 </form>
-                <center><img src="Evanston.gif" alt="Map" height="300"></center>
-
             </div>
-
-
           </div>
     </body>
 </html>
