@@ -44,27 +44,58 @@ a:active {
 
 /* HEADER BAR */
 
-#headerBar {
+#back_arrow{
+    font-size: 40px;
+    vertical-align: middle;
+}
+#homeheaderBar {
     height: 200px;
-    border-style: solid;
     width: 80%;
-    margin: 0 auto;
     margin-top: 5%;
+    border-style: solid;
+    margin-left: 10%;
+    padding-left: 40px;
     background-color: white;
-    /* margin-bottom: 25%; */
 }
 
-#headerBar-name-holder {
+#headerBar {
+    height: 100px;
+    border-style: solid;
+    margin: 0 auto;
+    padding-left: 40px;
+    background-color: white;
+}
+
+#homeheaderBar-name-holder {
     width: 550px;
     display: inline-block;
     vertical-align: middle;
 }
 
-#headerBar-name {
+#headerBar-name-holder {
+    width: 277px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#homeheaderBar-name {
     font-size: 80px;
     margin-left: 7%;
     vertical-align: middle;
     font-family: "Georgia", Georgia;
+}
+
+
+#headerBar-name {
+    font-size: 35px;
+    margin-left: 7%;
+    vertical-align: middle;
+    font-family: "Georgia", Georgia;
+}
+
+#homeheaderBar-logo-holder {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #headerBar-logo-holder {
@@ -72,8 +103,13 @@ a:active {
     vertical-align: middle;
 }
 
-#headerBar-logo {
+#homeheaderBar-logo {
     height: 150px;
+}
+
+
+#headerBar-logo {
+    height: 70px;
 }
 
 /* GIVE HELP */
@@ -84,9 +120,16 @@ a:active {
     width: 67%;
     margin: 0 auto;
     margin-top: 5%;
+    border-radius: 20px;
     background-color: white;
     margin-bottom: 25%;
     margin-top: 25%;
+    box-shadow:
+    1px 1px 0 0 #014D06,
+    2px 2px 0 0 #014D06,
+    3px 3px 0 0 #014D06,
+    4px 4px 0 0 #014D06,
+    5px 5px 5px 0 #000000;
     font-family: "Georgia", Georgia;
 }
 
