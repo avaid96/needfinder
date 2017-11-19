@@ -20,10 +20,8 @@ a:active {
 
 /* MAIN BLOCK CONTAINER */
 #mainBlock {
-    border: solid;
-    background-color: rgb(190, 194, 197);
-    background-image: url("background.png");
-    opacity: 1;
+    height: 70%;
+    background-image: url("lightning.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -59,11 +57,10 @@ a:active {
 }
 
 #headerBar {
-    height: 100px;
-    border-style: solid;
+    height: 115px;
     margin: 0 auto;
-    padding-left: 40px;
-    background-color: white;
+    padding-left: 20px;
+    background-color: rgba(2, 1, 1, 0.6);
 }
 
 #homeheaderBar-name-holder {
@@ -87,10 +84,11 @@ a:active {
 
 
 #headerBar-name {
-    font-size: 35px;
+    font-size: 45px;
     margin-left: 7%;
     vertical-align: middle;
-    font-family: "Georgia", Georgia;
+    font-family: "Helvetica", Helvetica;
+    color: white;
 }
 
 #homeheaderBar-logo-holder {
@@ -114,26 +112,54 @@ a:active {
 
 /* GIVE HELP */
 
-#seekingHelpButton {
-    height: 150px;
-    border-style: solid;
-    width: 67%;
+#tagLine {
+    width: 60%;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 50px;
     margin: 0 auto;
-    margin-top: 5%;
-    border-radius: 20px;
-    background-color: white;
-    margin-bottom: 25%;
-    margin-top: 25%;
-    box-shadow:
-    1px 1px 0 0 #014D06,
-    2px 2px 0 0 #014D06,
-    3px 3px 0 0 #014D06,
-    4px 4px 0 0 #014D06,
-    5px 5px 5px 0 #000000;
-    font-family: "Georgia", Georgia;
+    color: white;
 }
 
-#seekingHelpButton-text {
+#seekingHelpText {
+    width: 60%;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    color: white;
+}
+
+#seekingHelpSection {
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgba(2, 1, 1, 0.6);
+    margin-bottom: 25%;
+    margin-top: 25%;
+    font-family: "Helvetica", Helvetica;
+}
+
+#buttonSection {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.signInUpButton {
+    width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(61, 48, 48, 0.8);
+    /* border: solid; */
+}
+
+#seekingHelpButtons {
+    color: white;
     font-size: 80px;
     text-align: center;
     margin-top: 5%;
@@ -216,16 +242,6 @@ a:active {
 
 /* RESOURCES BANNER */
 
-#resourcesBanner {
-    border: solid;
-}
-
-#resourcesBanner-name-holder {
-    width: 550px;
-    display: inline-block;
-    margin-top: 0;
-}
-
 #locationFinder{
     display: inline-block;
     font-family: "Times" 'Times New Roman', Times, serif;
@@ -234,15 +250,19 @@ a:active {
 }
 
 #resourcesBanner-name {
-    font-size: 80px;
-    margin-left: 15%;
+    font-family: "Helvetica", Helvetica;
+    font-size: 60px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    margin-top: 20px;
 }
 
 /* RESOURCES SECTION */
 #resourcesSection {
-    border: solid;
     height: 100%;
-    background-color: rgba(10, 10, 10, 0.685);
+    background-color: white;
+    /* background-color: rgba(10, 10, 10, 0.685); */
 }
 
 .sponsorImage{ 
@@ -402,18 +422,18 @@ input[type="checkbox"]:focus{
 .tile{ 
     display:block;  
     float:left;  
-    width:200px;  
-    height:200px;  
+    width:350px;  
+    height:350px;  
     text-decoration:none;  
     position:relative;  
     font-size:35px;  
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 62px;
+    margin-right: 62px;
     margin-top: 55px;
     overflow:hidden;
-    padding-left: 10px;
     text-align: center;
     line-height:200px;
+    border: solid;
 }
 
 /* Needs */
