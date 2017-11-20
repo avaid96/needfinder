@@ -20,7 +20,7 @@ $(document).ready(function(){
         // Change the color of the selected tile, and display all the items within
         $('#default').addClass('inactive');
         $('#' + showId).addClass('active');
-        $('#'+this.id).css("background-color", "#2ECC71");
+        $('#'+this.id).css("background-color", "#3d3030");
 
     });
     

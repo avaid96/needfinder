@@ -45,6 +45,7 @@ a:active {
 #back_arrow{
     font-size: 40px;
     vertical-align: middle;
+    color: white;
 }
 #homeheaderBar {
     height: 200px;
@@ -139,6 +140,10 @@ a:active {
     margin-bottom: 25%;
     margin-top: 25%;
     font-family: "Helvetica", Helvetica;
+}
+
+i.icon-white {
+    color: white;
 }
 
 #buttonSection {
@@ -356,23 +361,24 @@ a:active {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space:nowrap;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(2,1,1,0.5);;
     margin-top: 5%;
 }
 
 .needCard {
     height: 200px;
-    border-style: solid;
     width: 200px;
     margin-left: 10%;
     margin-bottom: 10%;
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 5%;
-    background-color: white;
+    background-color: rgba(77, 74, 74, 0.8);
     font-size: 40px;
     text-align: center;
+    color: white;
     vertical-align: middle;
+    font-family: "helvetica", Helvetica;
     display: inline-block;
 }
 
@@ -382,12 +388,12 @@ a:active {
 
 .needTile {
     height: 50%;
-    border-style: solid;
-    width: 80%;
-    margin-left: 10%;
+    font-family: "Helvetica", helvetica;
+    width: 100%;
     margin-bottom: 10%;
     margin-top: 5%;
-    background-color: white;
+    color:white;
+    background-color: rgba(2,1,1,0.5);
 }
 
 .inactive{
