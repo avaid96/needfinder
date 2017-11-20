@@ -8,12 +8,11 @@
         <script src="scripts.js"></script>
     </head>
     <body>
-        <div id="mainBlock" style="height:100%">
+        <div id="mainBlock">
             <div id="headerBar">
                 <a href="home.html"><i class="material-icons md-light" id="back_arrow">keyboard_arrow_left</i></a>
                 <div id="headerBar-name-holder"><h1 id="headerBar-name">NeedFinder</h1></div>
             </div>
-
            
             <div id="tiles">
                 <div class="needCard" id="clothingCard">
@@ -27,7 +26,6 @@
                 </div>
             </div>
 
-
             <div class = "needTile" id="default">
                 <h1>Choose a category above</h1>
             </div>
@@ -36,15 +34,15 @@
                 <ul style="list-style-type:none" id="resourceList">
                     <div id="categoryName"><h3>Clothing</h3></div>
                     <li> <input type="checkbox"> Jeans </li>
-                    <li> <input type="checkbox">  Tshirts </li>
-                    <li> <input type="checkbox">  Pullover </li>
-                    <li> <input type="checkbox">  Socks</li>
-                    <li> <input type="checkbox">  Jackets </li>
-                    <li> <input type="checkbox">  Shoes</li>
-                    <li> <input type="checkbox">  Coat</li>
-                    <li> <input type="checkbox">  Blah</li>
-                    <li> <input type="checkbox">  Blah blah</li>
-                    <li> <input type="checkbox">  blah blah blah </li>
+                    <li> <input type="checkbox"> Tshirts </li>
+                    <li> <input type="checkbox"> Pullover </li>
+                    <li> <input type="checkbox"> Socks</li>
+                    <li> <input type="checkbox"> Jackets </li>
+                    <li> <input type="checkbox"> Shoes</li>
+                    <li> <input type="checkbox"> Coat</li>
+                    <li> <input type="checkbox"> Blah</li>
+                    <li> <input type="checkbox"> Blah blah</li>
+                    <li> <input type="checkbox"> blah blah blah </li>
                 </ul>
             </div>
 
@@ -81,12 +79,12 @@
             </div>
 
         <!-- Section denoting items you selected -->
-            <!-- <div id="headerBar-name-holder"><h1 id="headerBar-name">My Needs</h1></div>
-            <div>
-                <ol id="mylist">
-                </ol>
-            </div> -->
-
+            <div class="needTile" id="default">
+                <h3 id="headerBar-name" style="margin-left:0">My Needs</h3>
+                <div id="myNeedsList">
+                    <ul style="list-style-type:none"></ul>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -20,7 +20,7 @@ a:active {
 
 /* MAIN BLOCK CONTAINER */
 #mainBlock {
-    height: 70%;
+    height: 200%;
     background-image: url("lightning.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -368,7 +368,8 @@ i.icon-white {
 .needCard {
     height: 200px;
     width: 200px;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 10%;
     padding-left: 50px;
     padding-right: 50px;
@@ -390,7 +391,6 @@ li {
 }
 
 .needTile {
-    height: 60%;
     font-family: "Helvetica", helvetica;
     width: 100%;
     margin-bottom: 10%;
@@ -446,9 +446,15 @@ input[type="checkbox"]:focus{
     border: solid;
 }
 
-/* Needs */
 #check{
     vertical-align: middle;
+}
+
+#myNeedsList{
+    padding-left: 10%;
+    color: white;
+    font-family: "Helvetica", Arial, Helvetica, sans-serif;
+    font-size: 40px;
 }
 
 /* COLORS */

@@ -20,21 +20,42 @@ $(document).ready(function(){
         // Change the color of the selected tile, and display all the items within
         $('#default').addClass('inactive');
         $('#' + showId).addClass('active');
-        $('#'+this.id).css("background-color", "#3d3030");
+        $('#'+this.id).css("background-color", "#3D3030");
 
     });
     
+    var itemsInCart = [];
+    var itemsReferences = [];
+
     // Function for adding elements to the list of needs
-    // var lis = document.getElementById("clothing").getElementsByTagName('li');
-    // for (var i=0; i<lis.length; i++) {
-    //     lis[i].addEventListener('click', doStuff, false);
-    // }
+    var clothingList = document.getElementById("clothing").getElementsByTagName('li');
+    for (var i=0; i<clothingList.length; i++) {
+        clothingList[i].addEventListener('click', addToMyNeedsList, false);
+    }
     
-    // function doStuff() {
-    //     var ul = document.getElementById("mylist");
-    //     var li = document.createElement("li");
-    //     li.appendChild(document.createTextNode(this.text));
-    //     ul.appendChild(li);
-    // }
+    var foodList = document.getElementById("food").getElementsByTagName('li');
+    for (var i=0; i<foodList.length; i++) {
+        foodList[i].addEventListener('click', addToMyNeedsList, false);
+    }
+    
+    var rescueList = document.getElementById("rescue").getElementsByTagName('li');
+    for (var i=0; i<rescueList.length; i++) {
+        rescueList[i].addEventListener('click', addToMyNeedsList, false);
+    }
+       
+    function addToMyNeedsList(){
+        var newNeed = this.textContent||this.innerText; 
+        if(itemsInCart.indexOf(newNeed) == -1){
+            itemsInCart.push(newNeed);
+            document.getElementById("myNeedsList").children[0].innerHTML += "<li>"+itemsInCart[itemsInCart.length-1]+"</li>";
+        }
+        else{
+            var index = itemsInCart.indexOf(newNeed);
+            var str = document.getElementById("myNeedsList").children[0].innerHTML;
+            document.getElementById("myNeedsList").children[0].innerHTML = str.replace("<li>"+itemsInCart[index]+"</li>","");
+            itemsInCart.splice(index, 1);
+        }
+    
+    }
 });
 
