@@ -8,18 +8,16 @@
     <body>
         <div id="mainBlock" style="height:100%">
           <div id="headerBar">
-            <i class="material-icons">keyboard_arrow_left</i>
-            <i id="back_arrow" class="material-icons white-text"><a href="home.html">keyboard_arrow_left</a></i>
+            <a href="home.html"><i class="material-icons md-light" id="back_arrow">keyboard_arrow_left</i></a>
             <div id="headerBar-name-holder"><h1 id="headerBar-name">NeedFinder</h1></div>
-            <!-- <div id="headerBar-logo-holder"><img id="headerBar-logo" src="logo.png"></div> -->
           </div>
           <div id="signinDiv">
-              <div id="signInHeaders"> Sign In </div>
+              <div id="signInHeaders"> Sign in to seek help</div>
               <form>
                   <table class="signXTable">
                     <tbody>
-                        <tr class="signXTableRow"><td><div class="signXLabel">Email: </div></td><td><input class="signXInput" type="text" name="email"></td>
-                        <tr class="signXTableRow"><td><div class="signXLabel">Password: </div></td><td><input class="signXInput" type="password" name="password"></td>
+                        <tr class="signXTableRow"><td><input class="signXInput" type="text" name="email" placeholder="Email"></td>
+                        <tr class="signXTableRow"><td><input class="signXInput" type="password" name="password" placeholder="Password"></td>
                     </tbody>
                   </table>
                   <button type="button" class="signXButton" onclick="window.location.href='needs.html'">Sign In</button>
@@ -31,13 +29,16 @@
                 <form>
                     <table class="signXTable">
                         <tbody>
-                            <tr class="signXTableRow"><td><div class="signXLabel">Name: </div></td><td><input class="signXInput" type="text" name="name"></td>
-                            <tr class="signXTableRow"><td><div class="signXLabel">Phone#: </div></td><td><input class="signXInput" type="text" name="phone"></td>
-                            <tr class="signXTableRow"><td><div class="signXLabel">Address: </div></td><td><input class="signXInput" type="text" name="address"></td>
+                            <tr class="signXTableRow"><td><input class="signXInput" type="text" name="name" placeholder="Name"></td>
+                            <tr class="signXTableRow"><td><input class="signXInput" type="text" name="phone" placeholder="Phone#"></td>
+                            <tr class="signXTableRow"><td><input class="signXInput" type="text" name="address" placeholder="Address"></td>
                         <tbody>
                     <table class="signXTable">
 
-                    <div id="signUpLocationHolder"><img id="signUpLocation" src="location.png" alt="Map"></div>
+                    <div id="signUpLocationHolder">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="80%" height="300" frameborder="0" style="border:0"></iframe>
+                        <!-- <img id="signUpLocation" src="location.png" alt="Map"> -->
+                    </div>
                     <button type="button" class="signXButton" onclick="window.location.href='needs.html'">Sign Up</button>
                 </form>
             </div>

@@ -45,8 +45,10 @@ a:active {
 #back_arrow{
     font-size: 40px;
     vertical-align: middle;
-    color: white;
 }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
 #homeheaderBar {
     height: 200px;
     width: 80%;
@@ -282,7 +284,8 @@ i.icon-white {
 
 .signXTable {
     align-self: center;
-    padding-left: 60px;
+    padding-left: 25%;
+
 }
 
 .signXTableRow>td {
@@ -304,18 +307,21 @@ i.icon-white {
 }
 
 #signInHeaders {
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    margin-top: 20px;
+    font-family: "Helvetica", helvetica;
+    color: white;
+    margin-bottom: 40px;
+    padding-top: 45px;
+    margin-left:-50px;
 }
 
 .signXButton {
     font-size: 40px;
     outline: solid;
     float: right;
-    margin-right: 70px;
+    color: white;
+    margin-right: 28%;
     margin-top: 10px;
 }
 
@@ -332,26 +338,20 @@ i.icon-white {
 }
 
 #signinDiv {
-    height: 20%;
-    border-style: solid;
-    width: 80%;
-    margin-left: 10%;
+    height: 25%;
+    width: 100%;
     margin-bottom: 10%;
     margin-top: 5%;
-    background-color: white;
-    margin-left: 10%;
+    background-color: rgba(2, 1, 1, 0.6);
     font-size: 40px;
 }
 
 #signupDiv {
-    height: 650px;
-    border-style: solid;
-    width: 80%;
-    margin-left: 10%;
+    height: 785px;
+    width: 100%;
     margin-bottom: 10%;
     margin-top: 5%;
-    background-color: white;
-    margin-left: 10%;
+    background-color: rgba(2, 1, 1, 0.6);
     font-size: 40px;
 }
 
@@ -381,13 +381,16 @@ i.icon-white {
     font-family: "helvetica", Helvetica;
     display: inline-block;
 }
-
+li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 .active{
     display: inline-block;
 }
 
 .needTile {
-    height: 50%;
+    height: 60%;
     font-family: "Helvetica", helvetica;
     width: 100%;
     margin-bottom: 10%;
@@ -408,8 +411,9 @@ input[type="checkbox"]{
     box-sizing: border-box;
     position: relative;
     box-sizing: content-box ;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
     vertical-align: middle;
     border-width: 2px;
     border: solid;
@@ -417,7 +421,7 @@ input[type="checkbox"]{
     transition: all .3s linear;
 }
 input[type="checkbox"]:checked{
-    background-color: #2ECC71;
+    background-color: rgba(100, 84, 82, 0.568);
 }
 input[type="checkbox"]:focus{
     outline: 0 none;
