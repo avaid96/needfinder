@@ -20,7 +20,7 @@ a:active {
 
 /* MAIN BLOCK CONTAINER */
 #mainBlock {
-    height: 200%;
+    height: 80%;
     background-image: url("lightning.png");
     background-size: contain;
     background-repeat: no-repeat;

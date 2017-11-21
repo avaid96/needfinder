@@ -8,7 +8,7 @@
         <script src="scripts.js"></script>
     </head>
     <body>
-        <div id="mainBlock">
+        <div id="mainBlock" style="height:200%">
             <div id="headerBar">
                 <a href="home.html"><i class="material-icons md-light" id="back_arrow">keyboard_arrow_left</i></a>
                 <div id="headerBar-name-holder"><h1 id="headerBar-name">NeedFinder</h1></div>
@@ -27,7 +27,8 @@
             </div>
 
             <div class = "needTile" id="default">
-                <h1>Choose a category above</h1>
+                <h1 style='padding-left:10%; font-size:45px; height:950; padding-top:50px'>
+                    Choose a category above</h1>
             </div>
 
             <div class = "needTile inactive" id="clothing">
@@ -42,7 +43,6 @@
                     <li> <input type="checkbox"> Coat</li>
                     <li> <input type="checkbox"> Blah</li>
                     <li> <input type="checkbox"> Blah blah</li>
-                    <li> <input type="checkbox"> blah blah blah </li>
                 </ul>
             </div>
 
@@ -58,7 +58,6 @@
                     <li> <input type="checkbox"> Non-perishable pasteurized milk </li>
                     <li> <input type="checkbox"> High energy foods</li>
                     <li> <input type="checkbox"> Food for infants</li>
-                    <li> <input type="checkbox"> Comfort/stress foods </li>
                 </ul>
             </div>
             
@@ -74,15 +73,15 @@
                     <li> <input type="checkbox"> Coat</li>
                     <li> <input type="checkbox"> Blah</li>
                     <li> <input type="checkbox"> Blah blah</li>
-                    <li> <input type="checkbox"> blah blah blah </li>
                 </ul>
             </div>
 
         <!-- Section denoting items you selected -->
-            <div class="needTile" id="default">
-                <h3 id="headerBar-name" style="margin-left:0">My Needs</h3>
+            <div class="needTile" style="height:1000px" id="default">
+                <h3 id="headerBar-name" style="margin-left:0; padding-left:10%; padding-top:50px">My Needs</h3>
+                <h3 id="headerBar-name" style="margin-left:0; font-size:30px; padding-left:10%">Click on the checkbox to mark a need as satisfied</h3>
                 <div id="myNeedsList">
-                    <ul style="list-style-type:none"></ul>
+                    <ul id="selectedNeeds" style="list-style-type:none"></ul>
                 </div>
             </div>
         </div>
