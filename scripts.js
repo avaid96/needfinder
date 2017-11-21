@@ -24,7 +24,7 @@ $(document).ready(function(){
 
     });
     
-    var itemsInCart = [];
+    var itemsRequested = [];
     var itemsReferences = [];
 
     // Function for adding elements to the list of needs
@@ -45,10 +45,13 @@ $(document).ready(function(){
 
     function satisfyNeed() {
         var newNeed = this.textContent||this.innerText; 
-        var index = itemsInCart.indexOf(newNeed);
+        var index = itemsRequested.indexOf(newNeed);
         var str = document.getElementById("myNeedsList").children[0].innerHTML;
-        document.getElementById("myNeedsList").children[0].innerHTML = str.replace('<li><input type="checkbox">'+itemsInCart[index]+"</li>","");
-        itemsInCart.splice(index, 1);
+        document.getElementById("myNeedsList").children[0].innerHTML = str.replace('<li><input type="checkbox">'+itemsRequested[index]+"</li>","");
+        itemsRequested.splice(index, 1);
+        // Enabling the checkbox and unchecking it 
+        document.getElementById(newNeed.toString()).removeAttribute("disabled");
+        document.getElementById(newNeed.toString()).checked = false;
         var selectedNeedsList = document.getElementById("selectedNeeds").getElementsByTagName('li');
         for (var i=0; i<selectedNeedsList.length; i++) {
             selectedNeedsList[i].addEventListener('click', satisfyNeed, false);
@@ -56,7 +59,6 @@ $(document).ready(function(){
     }
 
     function revertDefaultMessage() {
-        console.log('hi');
         messaging.innerHTML = "";
     }
 
@@ -80,10 +82,13 @@ $(document).ready(function(){
 
     function addToMyNeedsList(){
         var newNeed = this.textContent||this.innerText; 
-        if(itemsInCart.indexOf(newNeed) == -1){
+        if(itemsRequested.indexOf(newNeed) == -1){
             messageSelection(1);
-            itemsInCart.push(newNeed);
-            document.getElementById("myNeedsList").children[0].innerHTML += '<li><input type="checkbox">'+itemsInCart[itemsInCart.length-1]+'</li>';
+            itemsRequested.push(newNeed);
+            console.log(document.getElementById(""+newNeed.toString() + ""));
+            document.getElementById("myNeedsList").children[0].innerHTML += '<li><input type="checkbox">'+itemsRequested[itemsRequested.length-1]+'</li>';
+            // Ensuring that the same checkbox isn't selected again
+            document.getElementById(newNeed.toString()).setAttribute("disabled", "true");
             var selectedNeedsList = document.getElementById("selectedNeeds").getElementsByTagName('li');
             for (var i=0; i<selectedNeedsList.length; i++) {
                 selectedNeedsList[i].addEventListener('click', satisfyNeed, false);
