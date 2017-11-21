@@ -54,7 +54,7 @@ $(document).ready(function(){
             selectedNeedsList[i].addEventListener('click', satisfyNeed, false);
         }
     }
-       
+
     function addToMyNeedsList(){
         var newNeed = this.textContent||this.innerText; 
         if(itemsInCart.indexOf(newNeed) == -1){

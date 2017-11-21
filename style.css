@@ -29,14 +29,11 @@ a:active {
 }
 
 #mainResourceBlock {
-    border: solid;
-    background-color: rgb(190, 194, 197);
-    background-image: url("background.png");
-    opacity: 1;
+    height: 100%;
+    background-image: url("lightning.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 100%;
     background-blend-mode: overlay;
 }
 
@@ -45,6 +42,18 @@ a:active {
 #back_arrow{
     font-size: 40px;
     vertical-align: middle;
+}
+
+#down-arrow {
+    font-size: 150px;
+}
+
+#down-arrow-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(141, 118, 118, 0.2);
+    margin-top: 375px;
 }
 
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
@@ -175,7 +184,7 @@ i.icon-white {
 /* Resources Pages */
 
 #resources {
-    height: 50%;
+    height: fit-content;
     border-style: solid;
     width: 80%;
     margin-left: 10%;
@@ -267,7 +276,7 @@ i.icon-white {
 
 /* RESOURCES SECTION */
 #resourcesSection {
-    height: 100%;
+    height: 80%;
     background-color: white;
     /* background-color: rgba(10, 10, 10, 0.685); */
 }
