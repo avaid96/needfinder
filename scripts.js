@@ -65,16 +65,16 @@ $(document).ready(function(){
                 selectedNeedsList[i].addEventListener('click', satisfyNeed, false);
             }
         }
-        else{
-            var index = itemsInCart.indexOf(newNeed);
-            var str = document.getElementById("myNeedsList").children[0].innerHTML;
-            document.getElementById("myNeedsList").children[0].innerHTML = str.replace('<li><input type="checkbox">'+itemsInCart[index]+"</li>","");
-            itemsInCart.splice(index, 1);
-            var selectedNeedsList = document.getElementById("selectedNeeds").getElementsByTagName('li');
-            for (var i=0; i<selectedNeedsList.length; i++) {
-                selectedNeedsList[i].addEventListener('click', satisfyNeed, false);
-            }
-        }
+        // else{
+        //     var index = itemsInCart.indexOf(newNeed);
+        //     var str = document.getElementById("myNeedsList").children[0].innerHTML;
+        //     document.getElementById("myNeedsList").children[0].innerHTML = str.replace('<li><input type="checkbox">'+itemsInCart[index]+"</li>","");
+        //     itemsInCart.splice(index, 1);
+        //     var selectedNeedsList = document.getElementById("selectedNeeds").getElementsByTagName('li');
+        //     for (var i=0; i<selectedNeedsList.length; i++) {
+        //         selectedNeedsList[i].addEventListener('click', satisfyNeed, false);
+        //     }
+        // }
     
     }
 });

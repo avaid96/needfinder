@@ -429,9 +429,7 @@ input[type="checkbox"]{
     display: inline-block;
     transition: all .3s linear;
 }
-input[type="checkbox"]:checked{
-    background-color: rgba(100, 84, 82, 0.568);
-}
+
 input[type="checkbox"]:focus{
     outline: 0 none;
     box-shadow: none;
