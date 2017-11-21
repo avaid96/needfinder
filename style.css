@@ -182,9 +182,20 @@ i.icon-white {
 }
 
 #whitespace{ 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 34%;
+    height: 150px;
+}
+
+.alertArea{
+    width: 100%;
+    text-align: center;
+    font-size: 30px
+}
+
+#location {
+    margin-top: 40px;
+}
+#alerts {
+    color: rgb(108, 17, 17);
 }
 
 #leftHalf{ 
@@ -253,8 +264,8 @@ i.icon-white {
 }
 
 .tile img{
-    height: 45%;
-    width: 50%;
+    height: 30%;
+    width: 30%;
 }
 
 #resourceList {
