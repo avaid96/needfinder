@@ -172,6 +172,65 @@ i.icon-white {
     margin-top: 5%;
 }
 
+#whitespace{ 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 34%;
+}
+
+#leftHalf{ 
+    text-align: center;
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 15px;
+    height: 30%;
+    display: inline-block;
+    font-size: 30px;
+}
+
+#rightHalf{ 
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    font-size: 40px;
+    padding-left: 19px;
+    padding-top: 11px;
+    border-left: 6px solid rgb(0, 0, 0);
+}
+
+#countDownButton {
+    margin-left: 32%;
+    margin-top: 8%;
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 10px;
+    padding-left: 47px;
+    padding-top: 20px;
+}
+
+#countdownText{
+    font-weight: bold;
+    margin-top: 36%;
+    text-align: center;
+
+}
+#name{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "Helvetica", helvetica;
+}
+
+#resourcesBlock{
+    height: 100%;
+    padding-top:20px;
+    background-image: url("lightning.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: overlay;
+}
 /* Resources Pages */
 
 #resources {
@@ -182,6 +241,11 @@ i.icon-white {
     margin-bottom: 10%;
     margin-top: 5%;
     background-color: white;
+}
+
+.tile img{
+    height: 45%;
+    width: 50%;
 }
 
 #resourceList {
@@ -260,7 +324,7 @@ i.icon-white {
     font-family: "Helvetica", Helvetica;
     font-size: 60px;
     text-align: center;
-    background-color: white;
+    color: white;
     border: none;
     margin-top: 20px;
 }
@@ -268,7 +332,7 @@ i.icon-white {
 /* RESOURCES SECTION */
 #resourcesSection {
     height: 100%;
-    background-color: white;
+    color: white;
     /* background-color: rgba(10, 10, 10, 0.685); */
 }
 
@@ -427,6 +491,10 @@ input[type="checkbox"]:focus{
 }
 
 /* Resource tiles */
+.name{ 
+    margin-top: -5%;
+    color: white;
+}
 .tile{ 
     display:block;  
     float:left;  
@@ -479,5 +547,5 @@ input[type="checkbox"]:focus{
 .TGreen{background-color:#00A300}
 .TDarkGreen{background-color:#008A00}
 .TBlack{background-color:#000}
-.TWhite{background-color:#fff} 
+.TWhite{background-color: rgba(2, 1, 1, 0.6)} 
 
