@@ -72,6 +72,10 @@ $(document).ready(function(){
             messaging.innerHTML = "This item has been added to your needs";
             setTimeout(revertDefaultMessage, 1000);
         }
+        else if (option == 2) {
+            messaging.innerHTML = "This item has already been marked as a need";
+            setTimeout(revertDefaultMessage, 1000);
+        }
     }
 
     function addToMyNeedsList(){
