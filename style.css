@@ -315,6 +315,17 @@ i.icon-white {
     outline: solid;
 }
 
+#messaging {
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.541);
+    font-size: 40px;
+    font-family: "Helvetica", helvetica;
+    background-color: rgba(2, 1, 1, 0.6);
+    border: none;
+    padding-left: 5%;
+    height: 45px;
+}
+
 #signInHeaders {
     font-size: 50px;
     text-align: center;

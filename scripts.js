@@ -55,9 +55,29 @@ $(document).ready(function(){
         }
     }
 
+    function revertDefaultMessage() {
+        console.log('hi');
+        messaging.innerHTML = "";
+    }
+
+    function messageSelection(option) {
+        // clear timeouts
+        var id = window.setTimeout(function() {}, 0);
+        while (id--) {
+            window.clearTimeout(id); // will do nothing if no timeout with id is present
+        }
+        // clear timeouts
+
+        if (option == 1) {
+            messaging.innerHTML = "This item has been added to your needs";
+            setTimeout(revertDefaultMessage, 1000);
+        }
+    }
+
     function addToMyNeedsList(){
         var newNeed = this.textContent||this.innerText; 
         if(itemsInCart.indexOf(newNeed) == -1){
+            messageSelection(1);
             itemsInCart.push(newNeed);
             document.getElementById("myNeedsList").children[0].innerHTML += '<li><input type="checkbox">'+itemsInCart[itemsInCart.length-1]+'</li>';
             var selectedNeedsList = document.getElementById("selectedNeeds").getElementsByTagName('li');
